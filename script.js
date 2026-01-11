@@ -26,20 +26,60 @@ const timer = setInterval(() => {
   document.getElementById("seconds").innerText = seconds;
 }, 1000);
 
+  const popup = document.getElementById('imagePopup');
+  const popupImg = document.getElementById('popupImage');
 
   function openPopup(src) {
-    document.getElementById('popupImage').src = src;
-    document.getElementById('imagePopup').classList.remove('hidden');
+    popupImg.src = src;
+    popup.classList.remove('hidden');
+    document.documentElement.style.overflow = 'hidden'; 
+    document.body.style.overflow = 'hidden';
   }
 
-  // ❌ Close popup
   function closePopup() {
-    document.getElementById('imagePopup').classList.add('hidden');
+    popup.classList.add('hidden');
+    document.documentElement.style.overflow = 'auto';
+    document.body.style.overflow = 'auto';
   }
 
-  // Also close when clicking outside the image
-  document.getElementById('imagePopup').addEventListener('click', (e) => {
-    if (e.target.id === 'imagePopup') {
+
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
       closePopup();
     }
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const music = document.getElementById("weddingMusic");
+    const openBtn = document.getElementById("openTicket");
+
+    // ១. ប្រសិនបើនៅក្នុងទំព័រ index.html (មានប៊ូតុងបើកសំបុត្រ)
+    if (openBtn && music) {
+        openBtn.addEventListener("click", function() {
+            music.play().then(() => {
+                // រក្សាទុកក្នុង LocalStorage ថាភ្ញៀវបានអនុញ្ញាតឱ្យលេងភ្លេងហើយ
+                localStorage.setItem("musicPlaying", "true");
+                
+                // ពន្យារពេលបន្តិចមុននឹងទៅកាន់ទំព័រថ្មី ដើម្បីឱ្យភ្លេងចាប់ផ្តើមស្រួល
+                setTimeout(() => {
+                    window.location.href = "./detail.html";
+                }, 300);
+            }).catch(error => {
+                console.log("Music play failed:", error);
+                window.location.href = "./detail.html";
+            });
+        });
+    }
+
+    // ២. ប្រសិនបើភ្ញៀវកំពុងស្ថិតក្នុងទំព័រ detail.html ឬទំព័រផ្សេងទៀត
+    // យើងឆែកមើលថាតើគេធ្លាប់ចុច "Play" កាលពីនៅទំព័រមុនឬនៅ
+    if (localStorage.getItem("musicPlaying") === "true") {
+        // បង្កើត Audio Element ថ្មីសម្រាប់ទំព័រ detail.html បើមិនទាន់មាន
+        let autoMusic = document.getElementById("weddingMusic");
+        if (!autoMusic) {
+            autoMusic = new Audio("./music/love.mp3");
+            autoMusic.loop = true;
+        }
+        autoMusic.play().catch(e => console.log("Auto-play blocked"));
+    }
+});
