@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding day</title>
     <!-- icon -->
-    <link rel="icon" type="icon" href="./image/1.png"/>
+    <link rel="icon" type="icon" href="./image/1.png" />
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- kantumruy pro -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <!-- moulpali -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap"
+        rel="stylesheet">
     <!-- moul -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&family=Moulpali&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&family=Moulpali&display=swap"
+        rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -23,12 +29,17 @@
             font-family: 'Moulpali';
             overflow-x: hidden;
         }
-        .wedding{
+
+        .kantum{
+            font-family: 'Kantumruy Pro';
+        }
+
+        .wedding {
             font-family: 'Moulpali';
             font-weight: 200;
         }
 
-        .Moulpali{
+        .Moulpali {
             font-family: 'Moulpali';
         }
 
@@ -39,252 +50,302 @@
         }
 
         ::-webkit-scrollbar {
-          display: none;
+            display: none;
         }
 
         html {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-          overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-x: hidden;
         }
 
         #hoverpic {
-          animation: pulse 1.5s infinite ease-in-out;
+            animation: pulse 1.5s infinite ease-in-out;
         }
 
         @keyframes pulse {
-          0%   { transform: scale(1); }
-          50%  { transform: scale(1.05); }
-          100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         [data-aos] {
             pointer-events: none;
         }
+
         .aos-animate {
             pointer-events: auto;
         }
-
     </style>
 </head>
+
 <body class="bg-[#e2f8e7]/40">
-    <div class="relative h-full w-full overflow-hidden bg-[url('image/pkakhmerV5.png')] bg-cover bg-center " >
-        <div class="fixed top-0 left-0 right-0 flex justify-between z-50"  >
-            <img class="h-[200px]" src="./image/veangV1.png" alt="">
-            <img class="h-[200px]" src="./image/veangV1ba.png" alt="">
+    <div class="relative h-full w-full overflow-hidden bg-cover bg-center ">
+        <img class="fixed top-0 left-0 w-screen h-screen object-cover object-right -z-10" src="./image/pkakhmerV5.png"
+            alt="background">
+        <div class="fixed top-0 left-0 right-0 flex justify-between z-50">
+            <img data-aos="fade-right" data-aos-duration="800" class="h-[200px]" src="./image/veangV1.png" alt="">
+            <img data-aos="fade-left" data-aos-duration="800" class="h-[200px]" src="./image/veangV1ba.png" alt="">
         </div>
-        <div class="container mx-auto max-w-lg pb-10">
+        <div class="relative z-10">
             <div class="flex justify-center items-center mt-10 mb-10" data-aos="fade-up" data-aos-duration="2000">
-                <img  id="hoverpic" class="h-[250px]" src="./image/Gold.png" alt="">
+                <img id="hoverpic" class="h-[250px]" src="./image/Gold.png" alt="">
             </div>
-            <div class="mt-1"  data-aos="fade-up" data-aos-duration="2000">
-                <p class="text-2xl h-11 p-4 moul flex justify-center items-center bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
+            <div class="mt-1" data-aos="fade-up" data-aos-duration="2000">
+                <p
+                    class="text-2xl h-11 p-4 moul flex justify-center items-center bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">
+                    សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
             </div>
             <div class="flex p-4 text-gray-600 justify-between items-center mt-3 text-md">
                 <div>
                     <div class="flex gap-2 items-center" data-aos="fade-up" data-aos-duration="2000">
-                        <p class="text-sm">លោក</p> 
+                        <p class="text-sm">លោក</p>
                         <p class="font-medium moul mb-1">ឈឿន អ៉ឺក</p>
                     </div>
                     <div class="flex gap-2 items-center" data-aos="fade-up" data-aos-duration="2000">
-                        <p class="text-sm">អ្នកស្រី​​</p> 
+                        <p class="text-sm">អ្នកស្រី​​</p>
                         <p class="font-medium moul mb-1">រ៉ម យ៉ាវ</p>
                     </div>
                 </div>
                 <div>
                     <div class="flex gap-2 items-center" data-aos="fade-up" data-aos-duration="2000">
-                        <p class="text-sm">លោក</p> 
+                        <p class="text-sm">លោក</p>
                         <p class="font-medium moul mb-1">ហ៊ុត ពិដោ</p>
                     </div>
                     <div class="flex gap-2 items-center" data-aos="fade-up" data-aos-duration="2000">
-                        <p class="text-sm">អ្នកស្រី​​</p> 
+                        <p class="text-sm">អ្នកស្រី​​</p>
                         <p class="font-medium moul mb-1">តែវ​​ សារ៉េត</p>
                     </div>
                 </div>
             </div>
             <div class="mt-4 p-4 flex flex-col justify-center items-center">
-                <p data-aos="fade-up" data-aos-duration="2000" class="text-lg h-8 moul flex justify-center items-center bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">មានកិត្តិយសសូមអញ្ចើញ</p>
+                <p data-aos="fade-up" data-aos-duration="2000"
+                    class="text-lg h-8 moul flex justify-center items-center bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">
+                    មានកិត្តិយសសូមអញ្ចើញ</p>
                 <img data-aos="fade-up" data-aos-duration="2000" class="h-[25px]" src="./image/&.png" alt="">
             </div>
             <div class="flex flex-col p-4 justify-center items-center text-sm text-gray-600">
-                <div data-aos="fade-up" data-aos-duration="2000" class="flex flex-wrap justify-center items-center gap-2 mt-[10px]">
-                    <p class="text-center leading-loose">ឯកឧត្ដម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ប្រិយមិត្តអញ្ចើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយសក្នុង</p>
+                <div data-aos="fade-up" data-aos-duration="2000"
+                    class="flex flex-wrap justify-center items-center gap-2 mt-[10px]">
+                    <p class="text-center leading-loose">ឯកឧត្ដម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា
+                        ប្រិយមិត្តអញ្ចើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយសក្នុង</p>
                     <p class="font-medium moul text-[15px]">ពិធីរៀបអាពាហ៍ពិពាហ៍</p>
                     <p class="mt-[2px]">កូនប្រុស​-កូនស្រី របស់ខ្ញុំ​ ។</p>
                 </div>
             </div>
 
-            <div class="flex p-4 justify-between items-center gap-8 mt-10 text-[#997A2F]" >
-                <div data-aos="zoom-in-right" data-aos-duration="800" class="flex flex-col justify-center items-center text-[19px] ">
-                    <p class="text-sm ">កូនប្រុស​​នាម</p> <p class="font-medium moul mt-2 text-[20px]">អឺក​ យាត</p>
+            <div class="flex p-4 justify-between items-center gap-8 mt-10 text-[#997A2F]">
+                <div data-aos="zoom-in-right" data-aos-duration="800"
+                    class="flex flex-col justify-center items-center text-[19px] ">
+                    <p class="text-sm ">កូនប្រុស​​នាម</p>
+                    <p class="font-medium moul mt-2 text-[20px]">អឺក​ យាត</p>
                 </div>
                 <img data-aos="zoom-in" data-aos-duration="800" class="h-[50px] rotate-" src="./image/vs4.png" alt="">
-                
-                <div data-aos="zoom-in-left" data-aos-duration="800" class="flex flex-col justify-center mt-1 items-center text-[19px]">
-                    <p class="text-sm">កូនស្រី​​នាម</p> <p class="font-medium moul mt-2 text-[20px]">រ៉ាន​ ធារ៉ា</p>
+
+                <div data-aos="zoom-in-left" data-aos-duration="800"
+                    class="flex flex-col justify-center mt-1 items-center text-[19px]">
+                    <p class="text-sm">កូនស្រី​​នាម</p>
+                    <p class="font-medium moul mt-2 text-[20px]">រ៉ាន​ ធារ៉ា</p>
                 </div>
             </div>
 
             <div class="p-4 py-5 moul text-gray-600">
-              <div data-aos="zoom-in" data-aos-duration="800" class="text-center text-gray-500 text-[15px]">
-                មករា
-              </div>
-
-              <div class="mt-2 flex items-center justify-center  gap-4">
-
-                <div data-aos="zoom-in-right" data-aos-duration="800" class="w-[26%] max-w-[260px] text-center ">
-                  <div class="h-[2px] bg-gray-600/70"></div>
-                  <div class="py-[8px] text-[13px] text-center leading-none">
-                    ថ្ងៃ សៅរ៍
-                  </div>
-                  <div class="h-[2px] bg-gray-600/70"></div>
+                <div data-aos="zoom-in" data-aos-duration="800" class="text-center text-gray-500 text-[15px]">
+                    មករា
                 </div>
 
-                <div data-aos="zoom-in" data-aos-duration="800" class=" text-4xl leading-none">
-                  ៣១
+                <div class="mt-2 flex items-center justify-center  gap-4">
+
+                    <div data-aos="zoom-in-right" data-aos-duration="800" class="w-[26%] max-w-[260px] text-center ">
+                        <div class="h-[2px] bg-gray-600/70"></div>
+                        <div class="py-[8px] text-[13px] text-center leading-none">
+                            ថ្ងៃ សៅរ៍
+                        </div>
+                        <div class="h-[2px] bg-gray-600/70"></div>
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-duration="800" class=" text-4xl leading-none">
+                        ៣១
+                    </div>
+
+                    <div data-aos="zoom-in-left" data-aos-duration="800" class="w-[26%] max-w-[260px] ">
+                        <div class="h-[2px] bg-gray-600/70"></div>
+                        <div class="py-[8px] text-[13px] text-center leading-none">
+                            ម៉ោង ៥ ល្ងាច
+                        </div>
+                        <div class="h-[2px] bg-gray-600/70"></div>
+                    </div>
                 </div>
 
-                <div data-aos="zoom-in-left" data-aos-duration="800" class="w-[26%] max-w-[260px] ">
-                  <div class="h-[2px] bg-gray-600/70"></div>
-                  <div class="py-[8px] text-[13px] text-center leading-none">
-                    ម៉ោង ៥ ល្ងាច
-                  </div>
-                  <div class="h-[2px] bg-gray-600/70"></div>
+                <div data-aos="zoom-in" data-aos-duration="800" class="mt-3 text-center  text-[15px]">
+                    ២០២៦
                 </div>
-              </div>
-
-              <div data-aos="zoom-in" data-aos-duration="800" class="mt-3 text-center  text-[15px]">
-                ២០២៦
-              </div>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="800" class="flex flex-col p-4 justify-center items-center text-sm text-gray-600">
+            <div data-aos="zoom-in" data-aos-duration="800"
+                class="flex flex-col p-4 justify-center items-center text-sm text-gray-600">
                 <div class="flex flex-wrap justify-center items-center gap-2 mt-[10px]">
-                    <p class="text-center leading-loose">ត្រូវនឹងថ្ងៃទី ១៣កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ព.ស.២៥៦៩ ស្ថិតនៅ សួនកំសាន្ត តាថូវយាយនាង ភូមិឈូករ័ត្ន ឃុំចន្លាស់ដៃ ស្រុកក្រឡាញ់ ខេត្តសៀមរាប ដោយមេត្រីភាព។</p>
+                    <p class="text-center leading-loose">ត្រូវនឹងថ្ងៃទី ១៣កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក ព.ស.២៥៦៩ ស្ថិតនៅ
+                        សួនកំសាន្ត តាថូវយាយនាង ភូមិឈូករ័ត្ន ឃុំចន្លាស់ដៃ ស្រុកក្រឡាញ់ ខេត្តសៀមរាប ដោយមេត្រីភាព។</p>
                 </div>
             </div>
 
             <div class="relative mx-auto w-full mt-4 max-w-[430px] overflow-hidden">
                 <!-- Image -->
-                <img data-aos="zoom-in" data-aos-duration="800"
-                  src="./image/personal/2.JPG"
-                  alt=""
-                  class="w-full h-auto object-cover"
-                />
+                <img data-aos="zoom-in" data-aos-duration="800" src="./image/personal/2.JPG" alt=""
+                    class="w-full h-auto object-cover" />
 
                 <!-- Overlay -->
                 <div class="absolute inset-0 z-10 flex flex-col items-center justify-end pb-10 sm:pb-12">
-                  <div data-aos="zoom-in" data-aos-duration="800" class="flex flex-col items-center">
-                    <p class="text-lg moul text-white text-2xl font-bold [text-shadow:0_2px_6px_rgba(212,175,55,0.8)] font-medium text-white drop-shadow">
-                      ចំនួនថ្ងៃរាប់ថយក្រោយ
-                    </p>
-                
-                    <div class="mt-2 flex flex-wrap justify-center gap-2 text-center">
-                      <div class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
-                        <p id="days" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
-                        <span class="text-xs sm:text-sm text-white leading-none mt-2">ថ្ងៃ</span>
-                      </div>
-                  
-                      <div class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
-                        <p id="hours" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
-                        <span class="text-xs sm:text-sm text-white leading-none mt-2">ម៉ោង</span>
-                      </div>
-                  
-                      <div class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
-                        <p id="minutes" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
-                        <span class="text-xs sm:text-sm text-white leading-none mt-2">នាទី</span>
-                      </div>
-                  
-                      <div class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
-                        <p id="seconds" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
-                        <span class="text-xs sm:text-sm text-white leading-none mt-2">វិនាទី</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>  
-            
-            <div class="mt-10 flex flex-col text-md justify-center items-center">
-                <p data-aos="zoom-in" data-aos-duration="800" data-aos="fade-up" data-aos-duration="2000"  class="moul text-[20px] font-medium flex justify-center items-center h-[35px] text-[#997A2F]">ទីតាំងកម្មវិធី</p>
-                <img data-aos="zoom-in" data-aos-duration="800" class="h-[25px]" src="./image/&.png" alt="">
-                <div data-aos="fade-up" data-aos-duration="600" class="relative w-full flex justify-center">
-                    <div class=" p-4 ">
-                        <img 
-                            onclick="openPopup('./image/mapV4.png')" 
-                            class="h-auto rounded-lg border-2 border-[#D4AF37] cursor-pointer" 
-                            src="./image/mapV3.png" 
-                            alt="Image preview"
-                        >
-                    </div>
-                </div>
+                    <div data-aos="zoom-in" data-aos-duration="800" class="flex flex-col items-center">
+                        <p
+                            class="text-lg moul text-white text-2xl font-bold [text-shadow:0_2px_6px_rgba(212,175,55,0.8)] font-medium text-white drop-shadow">
+                            ចំនួនថ្ងៃរាប់ថយក្រោយ
+                        </p>
 
-                <div class="text-md moul">
-                    <a data-aos="fade-up" data-aos-duration="600" data-aos="fade-up" data-aos-duration="2000"  href="https://maps.app.goo.gl/VLVG6hU5wHr9zcNH6?g_st=ipc" class="flex justify-center items-center">
-                        <img class="h-[70px] relative" src="./image/kbaj.png" alt="khmer style">
-                        <p class="absolute flex justify-center items-center h-[30px] text-sm bg-gradient-to-r from-white/75 via-white to-white/75 bg-clip-text text-transparent">សូមចុចដើម្បីចូលមើល Map</p>
-                    </a>
-                </div>
-                
-                <div class="mt-10 flex flex-col text-md justify-center items-center">
-                    <p data-aos="zoom-in" data-aos-duration="800" class="text-[20px] font-medium moul  text-[#997A2F]">កម្រងរូបភាព</p>
-                    <img data-aos="zoom-in" data-aos-duration="800" class="h-[25px]" src="./image/&.png" alt="">
-                    <div class="grid grid-cols-2 gap-2 p-4">
-                        <div data-aos="flip-left" data-aos-duration="1000">
-                          <img 
-                            onclick="openPopup('./image/personal/1.JPG')" 
-                            class="h-auto w-[200px] rounded-lg cursor-pointer" 
-                            src="./image/personal/1.JPG" 
-                            alt="Image preview"
-                          >
-                        </div>
-                        <!-- Popup / Modal -->
-                        <div id="imagePopup" class="fixed inset-0 bg-black/80 flex items-center justify-center hidden z-50">
-                          <div class="relative">
-                            <img id="popupImage" src="" alt="Popup" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg">
-                            <button 
-                              onclick="closePopup()" 
-                              class="absolute top-3 right-3 bg-black/20 hover:bg-black/40 text-white rounded-full px-3 py-1 text-xl font-bold">
-                              ✕
-                            </button>
-                          </div>
-                        </div>
-                        <div data-aos="flip-right" data-aos-duration="1000">
-                          <img 
-                            onclick="openPopup('./image/personal/7.JPG')" 
-                            class="h-auto w-[200px] rounded-lg cursor-pointer" 
-                            src="./image/personal/7.JPG" 
-                            alt="Image preview"
-                          >
-                        </div>
-                        <div data-aos="flip-left" data-aos-duration="1000">
-                          <img 
-                            onclick="openPopup('./image/personal/3.JPG')" 
-                            class="h-auto w-[200px] rounded-lg cursor-pointer" 
-                            src="./image/personal/3.JPG" 
-                            alt="Image preview"
-                          >
-                        </div>
-                        <div data-aos="flip-right" data-aos-duration="1000">
-                          <img 
-                            onclick="openPopup('./image/personal/8.jpg')" 
-                            class="h-auto w-[200px] rounded-lg cursor-pointer" 
-                            src="./image/personal/8.jpg" 
-                            alt="Image preview"
-                          >
+                        <div class="mt-2 flex flex-wrap justify-center gap-2 text-center">
+                            <div
+                                class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
+                                <p id="days" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
+                                <span class="text-xs sm:text-sm text-white leading-none mt-2">ថ្ងៃ</span>
+                            </div>
+
+                            <div
+                                class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
+                                <p id="hours" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
+                                <span class="text-xs sm:text-sm text-white leading-none mt-2">ម៉ោង</span>
+                            </div>
+
+                            <div
+                                class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
+                                <p id="minutes" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
+                                <span class="text-xs sm:text-sm text-white leading-none mt-2">នាទី</span>
+                            </div>
+
+                            <div
+                                class="flex flex-col items-center justify-center rounded-xl bg-red-700/90 backdrop-blur-md w-14 h-14 sm:w-16 sm:h-16">
+                                <p id="seconds" class="text-base sm:text-lg text-white font-bold leading-none">00</p>
+                                <span class="text-xs sm:text-sm text-white leading-none mt-2">វិនាទី</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="mt-10 flex flex-col text-md justify-center items-center">
+                <p data-aos="zoom-in" data-aos-duration="800" data-aos="fade-up" data-aos-duration="2000"
+                    class="moul text-[20px] font-medium flex justify-center items-center h-[35px] text-[#997A2F]">
+                    ទីតាំងកម្មវិធី</p>
+                <img data-aos="zoom-in" data-aos-duration="800" class="h-[25px]" src="./image/&.png" alt="">
+                <div data-aos="fade-up" data-aos-duration="600" class="relative w-full flex justify-center">
+                    <div class=" p-4 ">
+                        <img onclick="openPopup('./image/mapV4.png')"
+                            class="h-auto rounded-lg border-2 border-[#D4AF37] cursor-pointer" src="./image/mapV3.png"
+                            alt="Image preview">
+                    </div>
+                </div>
+
+                <div class="text-md moul">
+                    <a data-aos="fade-up" data-aos-duration="600" data-aos="fade-up" data-aos-duration="2000"
+                        href="https://maps.app.goo.gl/VLVG6hU5wHr9zcNH6?g_st=ipc"
+                        class="flex justify-center items-center">
+                        <img class="h-[70px] relative" src="./image/kbaj.png" alt="khmer style">
+                        <p
+                            class="absolute flex justify-center items-center h-[30px] text-sm bg-gradient-to-r from-white/75 via-white to-white/75 bg-clip-text text-transparent">
+                            សូមចុចដើម្បីចូលមើល Map</p>
+                    </a>
+                </div>
+
+                <div class="mt-10 flex flex-col text-md justify-center items-center">
+                    <p data-aos="zoom-in" data-aos-duration="800" class="text-[20px] font-medium moul  text-[#997A2F]">
+                        កម្រងរូបភាព</p>
+                    <img data-aos="zoom-in" data-aos-duration="800" class="h-[25px]" src="./image/&.png" alt="">
+                    <div class="grid grid-cols-2 gap-2 p-4">
+                        <div data-aos="flip-left" data-aos-duration="1000">
+                            <img onclick="openPopup('./image/personal/1.JPG')"
+                                class="h-auto w-[200px] rounded-lg cursor-pointer" src="./image/personal/1.JPG"
+                                alt="Image preview">
+                        </div>
+
+                        <div data-aos="flip-right" data-aos-duration="1000">
+                            <img onclick="openPopup('./image/personal/7.JPG')"
+                                class="h-auto w-[200px] rounded-lg cursor-pointer" src="./image/personal/7.JPG"
+                                alt="Image preview">
+                        </div>
+
+                        <div data-aos="flip-left" data-aos-duration="1000">
+                            <img onclick="openPopup('./image/personal/3.JPG')"
+                                class="h-auto w-[200px] rounded-lg cursor-pointer" src="./image/personal/3.JPG"
+                                alt="Image preview">
+                        </div>
+
+                        <div data-aos="flip-right" data-aos-duration="1000">
+                            <img onclick="openPopup('./image/personal/8.jpg')"
+                                class="h-auto w-[200px] rounded-lg cursor-pointer" src="./image/personal/8.jpg"
+                                alt="Image preview">
+                        </div>
+                    </div>
+
+                    <div id="imagePopup"
+                        class="fixed inset-0 bg-black/80 flex items-center justify-center hidden z-[9999]">
+                        <div class="relative" id="popupContent">
+                            <img id="popupImage" src="" alt="Popup"
+                                class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg" />
+                            <button type="button" onclick="closePopup()"
+                                class="absolute top-3 right-3 bg-black/40 hover:bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold">
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <form data-aos="fade-up" data-aos-duration="600" id="rsvpForm"
+                    class="w-full max-w-md mx-auto p-4 rounded-2xl bg-white/70 backdrop-blur border border-[#D4AF37]">
+                    <h3 class="text-xl font-bold text-[#997A2F] mb-4 moul text-center">សារជូនពរ</h3>
+
+                    <label class="block text-sm text-gray-700 mb-1">ឈ្មោះ</label>
+                    <input id="username" required
+                        class="w-full kantum text-lg p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                        placeholder="ឧ. ម៉ាន់ វ៉ាន់ដា" />
+
+                    <label class="block text-sm text-gray-700 mt-3 mb-1">លេខទូរស័ព្ទ</label>
+                    <input id="phone" required
+                        class="w-full kantum text-lg p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                        placeholder="ឧ. 012 345 678" />
+
+                    <label class="block text-sm text-gray-700 mt-3 mb-1">សារ</label>
+                    <textarea id="message" rows="4"
+                        class="w-full kantum text-lg p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                        placeholder="បញ្ចូលសាររបស់អ្នក..."></textarea>
+
+                    <button id="sendBtn" type="submit"
+                        class="mt-4 w-full moul p-3 rounded-xl bg-[#D4AF37] text-white text-md hover:opacity-90 active:scale-[0.99]">
+                        ផ្ញើសារ
+                    </button>
+
+                    <p id="status" class="text-sm mt-3 text-center"></p>
+                </form>
+            </div>
         </div>
     </div>
     <audio id="usic" loop>
-    <source src="./music/love.mp3" type="audio/mpeg">
+        <source src="./music/love.mp3" type="audio/mpeg">
     </audio>
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
