@@ -38,18 +38,49 @@
           display: none;
         }
 
-        /* Hide scrollbar for IE, Edge, and Firefox */
         html {
-          -ms-overflow-style: none;  /* IE and Edge */
+          -ms-overflow-style: none;
           scrollbar-width: none;
           overflow-x: hidden;
+        }
+
+        #hoverpic {
+          animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.05); }
+          100% { transform: scale(1); }
         }
 
     </style>
 </head>
 <body class="bg-[#e2f8e7]/40 overflow-x-hidden">
-    <div class="" >
-        hi
+    <div class="relative h-screen w-screen bg-[url('image/bg-2.png')] bg-cover bg-center " >
+        <div class="flex flex-col items-center justify-center pt-15 absolute inset-0">
+                <div class="" data-aos="fade-up" data-aos-duration="2000">
+                    <img  id="hoverpic" class="h-[350px]" src="./image/Gold.png" alt="">
+                </div>
+
+                <!-- <div data-aos="fade-up" data-aos-duration="2000">
+                    <p class="text-2xl h-20 wedding bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">សិរីមង្គលអាពាហ៍ពិពាហ៍</p>
+                </div> -->
+                
+
+                <a href="./detail.html" class="mt-[20px] flex justify-center items-center" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="h-[70px] relative" src="./image/kbaj.png" alt="khmer style">
+                    <p class="absolute text-lg font-semibold bg-gradient-to-r from-white/75 via-white to-white/75 bg-clip-text text-transparent">សូមចុចដើម្បីបើកសំបុត្រ</p>
+                </a>
+
+                <!-- <div class="mt-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="flex flex-col justify-center items-center">
+                        <p class="text-lg bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">ថ្ងៃទី 20 ខែ​ ឆ្នូ ឆ្នាំ 2025 ម៉ោង​ ៖ ៥:០០ នាទីល្ងាច</p>
+                        <p class="text-lg bg-gradient-to-r from-[#D4AF37] via-[#997A2F] to-[#D4AF37] bg-clip-text text-transparent">នៅគេហដ្ឋានខាងស្រី</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>
