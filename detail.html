@@ -30,7 +30,7 @@
             overflow-x: hidden;
         }
 
-        .kantum{
+        .kantum {
             font-family: 'Kantumruy Pro';
         }
 
@@ -91,7 +91,7 @@
     <div class="relative h-full w-full overflow-hidden bg-cover bg-center ">
         <img class="fixed top-0 left-0 w-screen h-screen object-cover object-right -z-10" src="./image/pkakhmerV5.png"
             alt="background">
-        <div class="fixed top-0 left-0 right-0 flex justify-between z-50">
+        <div class="fixed top-0 left-0 right-0 flex justify-between z-20">
             <img data-aos="fade-right" data-aos-duration="800" class="h-[200px]" src="./image/veangV1.png" alt="">
             <img data-aos="fade-left" data-aos-duration="800" class="h-[200px]" src="./image/veangV1ba.png" alt="">
         </div>
@@ -246,11 +246,10 @@
                     ទីតាំងកម្មវិធី</p>
                 <img data-aos="zoom-in" data-aos-duration="800" class="h-[25px]" src="./image/&.png" alt="">
                 <div data-aos="fade-up" data-aos-duration="600" class="relative w-full flex justify-center">
-                    <div class=" p-4 ">
-                        <img onclick="openPopup('./image/mapV4.png')"
-                            class="h-auto rounded-lg border-2 border-[#D4AF37] cursor-pointer" src="./image/mapV3.png"
+                    <a href="https://maps.app.goo.gl/VLVG6hU5wHr9zcNH6?g_st=ipc" class=" p-4 ">
+                        <img class="h-auto rounded-lg border-2 border-[#D4AF37] cursor-pointer" src="./image/mapV3.png"
                             alt="Image preview">
-                    </div>
+                    </a>
                 </div>
 
                 <div class="text-md moul">
@@ -300,8 +299,15 @@
                             <img id="popupImage" src="" alt="Popup"
                                 class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg" />
                             <button type="button" onclick="closePopup()"
-                                class="absolute top-3 right-3 bg-black/40 hover:bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold">
-                                ✕
+                                class="absolute kantum top-[91%] right-3 bg-black/60 hover:bg-black/40 text-white rounded-full w-[100px] h-9 flex items-center justify-center text-lg">
+                                ត្រឡប់
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-5 ml-1">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
                             </button>
                         </div>
                     </div>
@@ -311,7 +317,7 @@
             <div class="p-4">
                 <form data-aos="fade-up" data-aos-duration="600" id="rsvpForm"
                     class="w-full max-w-md mx-auto p-4 rounded-2xl bg-white/70 backdrop-blur border border-[#D4AF37]">
-                    <h3 class="text-xl font-bold text-[#997A2F] mb-4 moul text-center">សារជូនពរ</h3>
+                    <h3 class="text-[20px] font-medium text-[#997A2F] mb-4 moul text-center">សារជូនពរ</h3>
 
                     <label class="block text-sm text-gray-700 mb-1">ឈ្មោះ</label>
                     <input id="username" required
