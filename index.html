@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding day</title>
     <!-- icon -->
-    <link rel="icon" type="icon" href="./image/1.png"/>
+    <link rel="icon" type="icon" href="./image/1.png" />
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- kantumruy pro -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <!-- moulpali -->
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap"
+        rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -21,65 +25,111 @@
             font-family: 'Kantumruy Pro';
             overflow-x: hidden;
         }
-        .kantum{
+
+        .kantum {
             font-family: 'Kantumruy Pro';
-            font-style: italic;
-        }
-        .wedding{
-            font-family: 'Moulpali';
-            font-weight: 600;
         }
 
-        .Moulpali{
+        .wedding {
             font-family: 'Moulpali';
+            font-weight: 200;
+        }
+
+        .Moulpali {
+            font-family: 'Moulpali';
+        }
+
+        .moul {
+            font-family: "Moul", serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         ::-webkit-scrollbar {
-          display: none;
+            display: none;
         }
 
         html {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-          overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-x: hidden;
         }
 
         #hoverpic {
-          animation: pulse 1.5s infinite ease-in-out;
+            animation: pulse 1.5s infinite ease-in-out;
         }
 
         @keyframes pulse {
-          0%   { transform: scale(1); }
-          50%  { transform: scale(1.05); }
-          100% { transform: scale(1); }
-        }
+            0% {
+                transform: scale(1);
+            }
 
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
+
 <body class="bg-[#e2f8e7]/40 overflow-x-hidden">
-    <div class="relative h-screen w-screen bg-[url('image/bg-2.png')] bg-cover bg-center " >
+    <div class="relative h-screen w-screen bg-[url('image/bg-2.png')] bg-cover bg-center ">
         <div class="flex flex-col items-center justify-center pt-15 absolute inset-0">
-                <div class="" data-aos="fade-up" data-aos-duration="2000">
-                    <img  id="hoverpic" class="h-[350px]" src="./image/Gold.png" alt="">
-                </div>
-
-                <a id="openTicket" href="./detail.html" class="mt-[20px] flex justify-center items-center" data-aos="fade-up" data-aos-duration="2000">
-                    <img class="h-[70px] relative" src="./image/kbaj.png" alt="khmer style">
-                    <p class="absolute text-lg font-semibold bg-gradient-to-r from-white/75 via-white to-white/75 bg-clip-text text-transparent">សូមចុចដើម្បីបើកសំបុត្រ</p>
-                </a>
-
+            <div class="" data-aos="fade-up" data-aos-duration="2000">
+                <img id="hoverpic" class="h-[350px]" src="./image/Gold.png" alt="">
             </div>
+
+            <a id="openTicket" href="./detail.html" class="mt-[20px] moul flex justify-center items-center"
+                data-aos="fade-up" data-aos-duration="2000">
+                <img class="h-[70px] relative" src="./image/kbaj.png" alt="khmer style">
+                <p
+                    class="absolute p-1 text-md bg-gradient-to-r from-white/75 via-white to-white/75 bg-clip-text text-transparent">
+                    សូមចុចដើម្បីបើកសំបុត្រ</p>
+            </a>
+
         </div>
     </div>
-    <audio id="weddingMusic" loop>
+    </div>
+    <audio id="weddingMusic" loop playsinline preload="auto">
         <source src="./music/love.mp3" type="audio/mpeg">
     </audio>
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 
 <script>
-  AOS.init();
+    AOS.init();
+    document.addEventListener("DOMContentLoaded", () => {
+        const music = document.getElementById("weddingMusic");
+        const openBtn = document.getElementById("openTicket");
+
+        // optional: restore volume
+        if (music) music.volume = 0.8;
+
+        if (openBtn && music) {
+            openBtn.addEventListener("click", async (e) => {
+                e.preventDefault();
+
+                try {
+                    await music.play(); // ✅ user gesture on index page
+                    localStorage.setItem("musicPlaying", "true");
+                } catch (err) {
+                    // iOS sometimes still blocks if not a direct tap, but click usually ok
+                    console.log("Music play failed:", err);
+                    localStorage.setItem("musicPlaying", "false");
+                }
+
+                // navigate after attempting play
+                window.location.href = "./detail.html";
+            });
+        }
+    });
+
 </script>
+
 </html>
